@@ -216,11 +216,13 @@
 </section><!-- about-section -->
 
 <section class="counter-section" id="counter">
-        <div class="owl-carousel">
-          <div class="" *ngFor="let conocimiento of curriculum.body.conocimientos_generales">
-              <img src="assets/images/{{conocimiento.imagen}}" alt="">
-          </div>
-        </div>
+        <owl-carousel-o [options]="customOptions">
+            <ng-container *ngFor="let slide of curriculum.body.conocimientos_generales">
+              <ng-template carouselSlide style="width: 50% !important">
+                <img src="assets/images/{{slide.imagen}}" [alt]="slide.imagen">
+              </ng-template>
+            </ng-container>
+          </owl-carousel-o>
 </section><!-- counter-section-->
 
 <footer>
