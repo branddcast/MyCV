@@ -1,0 +1,127 @@
+{
+	"header" : {
+		"title" : "Brandon Jaime",
+		"datos_personales" : {
+			"nombre_completo" : "Brandon Daniel Jaime Castillo",
+			"alias" : "Brandon Jaime",
+			"ocupacion" : "Desarrollador de Software",
+			"fecha_nacimiento" : "Octubre 30, 1996",
+			"direccion" : "Monterrey, Nuevo Léon.<br/>México",
+			"telefono" : "81 11 86 01 18",
+			"email" : "jcastillo.brandon@gmail.com",
+			"foto_perfil" : ""
+		},
+		"redes_sociales" : {
+			"linkedin" : "brandonjaimecastillo",
+			"facebook" : "",
+			"twitter" : "",
+			"instagram" : "",
+			"github" : "branddcast"
+		}
+	},
+	"body" : {
+		"portafolio" : "",
+		"acerca" : {
+			"descripcion" : "Estudiante nivel superior de la licenciatura en Ciencias Computacionales, de la Facultad de Ciencias Físico Matemáticas (FCFM) en la Universidad Autónoma de Nuevo León (UANL). Adaptación a entornos de trabajo. Organización. Liderazgo. Trabajo en equipo. Fácil Comprensión. Creativo.",
+			"habilidades" : [
+				{
+					"nombre" : "PHP",
+					"nivel" : "80"
+				},
+				{
+					"nombre" : "JAVA",
+					"nivel" : "70"
+				},
+				{
+					"nombre" : "WEB DESIGN",
+					"nivel" : "80"
+				},
+				{
+					"nombre" : "HTML & CSS3",
+					"nivel" : "80"
+				}
+			]
+		},
+		"experiencia" : [
+			{
+				"puesto" : "Desarrollador Web",
+				"empresa" : "Grupo Avalanz (Azteca Noreste, Periódico El Horizonte, Info7, etc.)",
+				"tiempo" : "2018",
+				"descripcion" : "Practicante de desarrollo web. Mayo 8 a Noviembre 8 de 2018. PHP, MySQL, JQuery, JavaScript, CSS, Laravel, Bootstrap."
+			},
+			{
+				"puesto" : "Desarrollador FullStack PHP",
+				"empresa" : "FYN Software",
+				"tiempo" : "2019",
+				"descripcion" : "Desarrollador FullStack PHP de Febrero a Julio 2019. PHP, CodeIgniter, MySQL, JQuery, JavaScript, WordPress."
+			},
+			{
+				"puesto" : "Desarrollador Java Jr.",
+				"empresa" : "AlphaCredit",
+				"tiempo" : "ACTUALIDAD",
+				"descripcion" : "Desarrollador en Java de Septiembre 17 de 2019 a la actualidad."
+			}
+		],
+		"educacion" : [
+			{
+				"nivel" : "Técnico en Mantenimiento",
+				"escuela" : "CETEC",
+				"lugar" : "Jiutepec, Morelos.",
+				"tiempo" : "2009",
+				"descripcion" : "Diplomado en mantenimiento preventivo de computadoras."
+			},
+			{
+				"nivel" : "Técnico Diseñador Gráfico",
+				"escuela" : "ICO",
+				"lugar" : "Cuernavaca, Morelos.",
+				"tiempo" : "2012",
+				"descripcion" : "Carrera Técnica en Diseño Gráfico Digital y Operador de Microcomputadoras (Office)."
+			},
+			{
+				"nivel" : "Técnico Programador",
+				"escuela" : "CBTis 166",
+				"lugar" : "Jiutepec, Morelos.",
+				"tiempo" : "2015",
+				"descripcion" : "Carrera Técnica en Programación. Nivel Medio Superior."
+			},
+			{
+				"nivel" : "Lic. Ciencias Computacionales",
+				"escuela" : "FCFM UANL",
+				"lugar" : "San Nicolás de los Garza, Nuevo León.",
+				"tiempo" : "ACTUALIDAD",
+				"descripcion" : "Licenciatura en Ciencias Computacionales con especialidad en Ing. Desarrollo de Software."
+			}
+		],
+		"conocimientos_generales" : [
+			{
+				"imagen" : "php.png"
+			},
+			{
+				"imagen" : "java.png"
+			},
+			{
+				"imagen" : "laravel.png"
+			},
+			{
+				"imagen" : "angular.png"
+			},
+			{
+				"imagen" : "android.png"
+			},
+			{
+				"imagen" : "codeigniter.png"
+			}
+		],
+		"conocimientos" : "PHP, JAVA, JavaScript, MySQL, Oracle, SQL Server, C/C++, CSS, Perl, Python. <br/>Laravel, Bootstrap, JSF, CodeIgniter, WordPress, HTML, JQuery, UML, Git, Composer, Vue Js, Angujar Js.<br/>MVC, Android (Native). <br/>Adobe CC",
+		"idiomas" : {
+			"idioma_1" : {
+				"nombre" : "Inglés",
+				"nivel" : {
+					"hablado" : "60",
+					"escuchado" : "60",
+					"escrito" : "60"
+				}
+			}
+		}
+	}
+}

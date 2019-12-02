@@ -1,0 +1,247 @@
+<div *ngIf="curriculum!=null; else espera"></div>
+<header>
+  <div class="container">
+    <div class="heading-wrapper">
+      <div class="row">
+        <div class="col-sm-6 col-md-6 col-lg-4">
+          <div class="info">
+            <i class="icon ion-ios-location-outline"></i>
+            <div class="right-area">
+              <h5 [innerHTML]="curriculum.header.datos_personales.direccion"></h5>
+            </div><!-- right-area -->
+          </div><!-- info -->
+        </div><!-- col-sm-4 -->
+        
+        <div class="col-sm-6 col-md-6 col-lg-4">
+          <div class="info">
+            <i class="icon ion-ios-telephone-outline"></i>
+            <div class="right-area">
+              <h5 class="pt-2" [innerHTML]="curriculum.header.datos_personales.telefono"></h5>
+            </div><!-- right-area -->
+          </div><!-- info -->
+        </div><!-- col-sm-4 -->
+        
+        <div class="col-sm-6 col-md-6 col-lg-4">
+          <div class="info">
+            <i class="icon ion-ios-chatboxes-outline"></i>
+            <div class="right-area">
+              <h5 class="pt-2" [innerHTML]="curriculum.header.datos_personales.email"></h5>
+            </div><!-- right-area -->
+          </div><!-- info -->
+        </div><!-- col-sm-4 -->
+      </div><!-- row -->
+    </div><!-- heading-wrapper -->
+    
+    <a class="downlad-btn" href="#">Descargar CV</a>
+  </div><!-- container -->
+</header>
+
+<section class="intro-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-1 col-lg-2"></div>
+      <div class="col-md-10 col-lg-8">
+        <div class="intro">
+          <div class="profile-img"><img src="assets/images/{{curriculum.header.datos_personales.foto_perfil}}" alt=""></div>
+          <h2><b>{{curriculum.header.datos_personales.alias}}</b></h2>
+          <h4 class="font-yellow" [innerHTML]="curriculum.header.datos_personales.ocupacion"></h4>
+          <ul class="information margin-tb-30">
+            <li><b>NACIMIENTO : </b>{{curriculum.header.datos_personales.fecha_nacimiento}}</li>
+            <li><b>EMAIL : </b>{{curriculum.header.datos_personales.email}}</li>
+            <li class="ion-person"> {{curriculum.header.datos_personales.nombre_completo}}</li>
+          </ul>
+          <ul class="social-icons">
+            <li><a href="http://www.linkedin.com/in/{{curriculum.header.redes_sociales.linkedin}}"><i class="ion-social-linkedin"></i></a></li>
+            <li><a href="http://www.instagram.com/{{curriculum.header.redes_sociales.instagram}}"><i class="ion-social-instagram"></i></a></li>
+            <li><a href="http://www.facebook.com/{{curriculum.header.redes_sociales.facebook}}"><i class="ion-social-facebook"></i></a></li>
+            <li><a href="htt://www.twitter.com/{{curriculum.header.redes_sociales.twitter}}"><i class="ion-social-twitter"></i></a></li>
+            <li><a href="htt://www.github.com/{{curriculum.header.redes_sociales.github}}"><i class="ion-social-github"></i></a></li>
+          </ul>
+        </div><!-- intro -->
+      </div><!-- col-sm-8 -->
+    </div><!-- row -->
+  </div><!-- container -->
+</section><!-- intro-section -->
+
+<section class="portfolio-section section">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-4">
+        <div class="heading">
+          <h3><b>Portafolio</b></h3>
+          <h6 class="font-lite-black"><b>MI TRABAJO</b></h6>
+        </div>
+      </div><!-- col-sm-4 -->
+      <div class="col-sm-8">
+        <div class="portfolioFilter clearfix margin-b-80">
+          <a href="#" data-filter="*" class="current"><b>TODOS</b></a>
+          <a href="#" data-filter=".web-design"><b>DISEÑO WEB</b></a>
+          <a href="#" data-filter=".branding"><b>SOFTWARE</b></a>
+          <a href="#" data-filter=".graphic-design"><b>DISEÑO GRÁFICO</b></a>
+        </div><!-- portfolioFilter -->
+      </div><!-- col-sm-8 -->
+    </div><!-- row -->
+  </div><!-- container -->
+  
+  <div class="portfolioContainer">
+    
+    <div class="p-item web-design">
+      <a href="images/portfolio-1-600x400.jpg" data-fluidbox>
+        <img src="assets/images/portfolio-1-600x400.jpg" alt=""></a>
+    </div><!-- p-item -->
+    
+    <div class="p-item branding graphic-design">
+      <a href="images/portfolio-7-600x800.jpg" data-fluidbox>
+        <img src="assets/images/portfolio-7-600x800.jpg" alt=""></a>
+    </div><!-- p-item -->
+    
+    <div class="p-item web-design">
+      <a href="images/portfolio-2-600x400.jpg" data-fluidbox>
+        <img src="assets/images/portfolio-2-600x400.jpg" alt=""></a>
+    </div><!-- p-item -->
+    
+    <div class="p-item p-item-2 graphic-design">
+      <a class="img" href="images/portfolio-8-300x400.jpg" data-fluidbox>
+        <img src="assets/images/portfolio-8-300x400.jpg" alt=""></a>
+      <a class="img" href="images/portfolio-9-300x400.jpg" data-fluidbox>
+        <img src="assets/images/portfolio-9-300x400.jpg" alt=""></a>
+    </div><!-- p-item -->
+    
+    <div class="p-item branding graphic-design">
+      <a href="images/portfolio-3-600x400.jpg" data-fluidbox>
+        <img src="assets/images/portfolio-3-600x400.jpg" alt=""></a>
+    </div><!-- p-item -->
+    
+    <div class="p-item graphic-design web-design">
+      <a href="images/portfolio-4-600x400.jpg" data-fluidbox>
+        <img src="assets/images/portfolio-4-600x400.jpg" alt=""></a>
+    </div><!-- p-item -->
+    
+    <div class="p-item  graphic-design branding">
+      <a href="images/portfolio-5-600x800.jpg" data-fluidbox>
+        <img src="assets/images/portfolio-5-600x800.jpg" alt=""></a>
+    </div><!-- p-item -->
+      
+    <div class="p-item web-design branding">
+      <a href="images/portfolio-6-600x800.jpg" data-fluidbox>
+        <img src="assets/images/portfolio-6-600x800.jpg" alt=""></a>
+    </div><!-- p-item -->
+
+    <div class="p-item p-item-2 graphic-design">
+      <a class="img" href="images/portfolio-10-300x400.jpg" data-fluidbox>
+        <img src="assets/images/portfolio-10-300x400.jpg" alt=""></a>
+      <a class="img" href="images/portfolio-11-300x400.jpg" data-fluidbox>
+        <img src="assets/images/portfolio-11-300x400.jpg" alt=""></a>
+    </div><!-- p-item -->
+  
+  </div><!-- portfolioContainer -->
+  
+</section><!-- portfolio-section -->
+
+
+<section class="about-section section">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-4">
+        <div class="heading">
+          <h3><b>Sobre mi</b></h3>
+          <h6 class="font-lite-black"><b>ÁREA PROFESIONAL</b></h6>
+        </div>
+      </div><!-- col-sm-4 -->
+      <div class="col-sm-8">
+        <p class="margin-b-50" [innerHTML]="curriculum.body.acerca.descripcion"></p>
+        
+        <div class="row">
+          <div class="col-sm-6 col-md-6 col-lg-3" *ngFor="let habilidad of curriculum.body.acerca.habilidades">
+            <div class="radial-prog-area margin-b-30">
+              <div class="radial-progress" [attr.data-prog-percent]="habilidad.nivel/100">
+                <div></div>
+                <h6 class="progress-title">{{habilidad.nombre}}</h6>
+              </div>
+            </div><!-- radial-prog-area-->
+          </div><!-- col-sm-6-->        
+        </div><!-- row -->
+      </div><!-- col-sm-8 -->
+    </div><!-- row -->
+  </div><!-- container -->
+</section><!-- about-section -->
+
+<section class="experience-section section">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-4">
+        <div class="heading">
+          <h3><b>Experiencia Laboral</b></h3>
+          <h6 class="font-lite-black"><b>TRABAJOS ANTERIORES</b></h6>
+        </div>
+      </div><!-- col-sm-4 -->
+      <div class="col-sm-8">
+      
+        <div class="experience margin-b-50" *ngFor="let trabajo of curriculum.body.experiencia">
+          <h4><b>{{trabajo.puesto}}</b></h4>
+          <h5 class="font-yellow"><b>{{trabajo.empresa}}</b></h5>
+          <h6 class="margin-t-10">{{trabajo.tiempo}}</h6>
+          <p class="font-semi-white margin-tb-30">{{trabajo.descripcion}}</p>
+        </div><!-- experience -->
+        
+      </div><!-- col-sm-8 -->
+    </div><!-- row -->
+  </div><!-- container -->
+  
+</section><!-- experience-section -->
+
+<section class="education-section section">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-4">
+        <div class="heading">
+          <h3><b>EDUCACIÓN</b></h3>
+          <h6 class="font-lite-black"><b>HISTORIAL ACADÉMICO</b></h6>
+        </div>
+      </div><!-- col-sm-4 -->
+      <div class="col-sm-8">
+        <div class="education-wrapper">
+          <div class="education margin-b-50" *ngFor="let academia of curriculum.body.educacion">
+            <h4><b>{{academia.nivel}}</b></h4>
+            <h5 class="font-yellow"><b>{{academia.escuela}}, {{academia.lugar}}</b></h5>
+            <h6 class="font-lite-black margin-t-10">{{academia.tiempo}}</h6>
+            <p class="margin-tb-30">{{academia.descripcion}}</p>
+          </div><!-- education -->
+          
+        </div><!-- education-wrapper -->
+      </div><!-- col-sm-8 -->
+    </div><!-- row -->
+  </div><!-- container -->
+  
+</section><!-- about-section -->
+
+<section class="counter-section" id="counter">
+        <div class="owl-carousel">
+          <div class="" *ngFor="let conocimiento of curriculum.body.conocimientos_generales">
+              <img src="assets/images/{{conocimiento.imagen}}" alt="">
+          </div>
+        </div>
+</section><!-- counter-section-->
+
+<footer>
+  <p class="copyright">
+    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="ion-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+  </p>
+
+
+</footer>
+<ng-template #espera>
+  <div class="spinner-grow text-info" role="status">
+      <span class="sr-only">Loading...</span>
+  </div>
+</ng-template>
+
+<script>
+  $(document).ready(function(){
+    
+  });
+</script>
+
+<router-outlet></router-outlet>
