@@ -54,8 +54,8 @@
             <li><a href="http://www.linkedin.com/in/{{curriculum.header.redes_sociales.linkedin}}"><i class="ion-social-linkedin"></i></a></li>
             <li><a href="http://www.instagram.com/{{curriculum.header.redes_sociales.instagram}}"><i class="ion-social-instagram"></i></a></li>
             <li><a href="http://www.facebook.com/{{curriculum.header.redes_sociales.facebook}}"><i class="ion-social-facebook"></i></a></li>
-            <li><a href="htt://www.twitter.com/{{curriculum.header.redes_sociales.twitter}}"><i class="ion-social-twitter"></i></a></li>
-            <li><a href="htt://www.github.com/{{curriculum.header.redes_sociales.github}}"><i class="ion-social-github"></i></a></li>
+            <li><a href="http://www.twitter.com/{{curriculum.header.redes_sociales.twitter}}"><i class="ion-social-twitter"></i></a></li>
+            <li><a href="http://www.github.com/{{curriculum.header.redes_sociales.github}}"><i class="ion-social-github"></i></a></li>
           </ul>
         </div><!-- intro -->
       </div><!-- col-sm-8 -->
@@ -149,19 +149,47 @@
         </div>
       </div><!-- col-sm-4 -->
       <div class="col-sm-8">
-        <p class="margin-b-50" [innerHTML]="curriculum.body.acerca.descripcion"></p>
+        <p class="margin-b-50 text-justify" [innerHTML]="curriculum.body.acerca.descripcion"></p>
         
-        <div class="row">
-          <div class="col-sm-6 col-md-6 col-lg-3" *ngFor="let habilidad of curriculum.body.acerca.habilidades">
+        <div class="row justify-content-center">
+          <div class="col-12 col-sm-6 col-md-6 col-lg-3 text-center" *ngFor="let habilidad of curriculum.body.acerca.habilidades">
             <div class="radial-prog-area margin-b-30">
-              <div class="radial-progress" [attr.data-prog-percent]="habilidad.nivel/100">
-                <div></div>
-                <h6 class="progress-title">{{habilidad.nombre}}</h6>
-              </div>
-            </div><!-- radial-prog-area-->
-          </div><!-- col-sm-6-->        
+              <circle-progress
+                [percent]="habilidad.nivel"
+                [title] = "habilidad.nombre"
+              ></circle-progress>
+            </div><!--radial-prog-area-->
+          </div><!-- col-sm-6-->   
         </div><!-- row -->
+
+        <p class="margin-b-50 text-justify" [innerHTML]="curriculum.body.conocimientos"></p>
       </div><!-- col-sm-8 -->
+
+      <div class="col-sm-4">
+        <div class="heading">
+          <h3><b>Idiomas</b></h3>
+        </div>
+      </div>
+      <div class="col-sm-8">
+        <div class="row justify-content-center" *ngFor="let idioma of curriculum.body.idiomas">
+            <h4 class="font-lite-black"><b>{{idioma.nombre}}</b></h4>
+            <div class="col-12 col-sm-6 col-md-6 col-lg-3 text-center">
+              <div class="radial-prog-area margin-b-30">
+                <circle-progress [imageSrc] = "'assets/images/icons/_ionicons_svg_ios-mic.svg'" [radius]="50" [space] = "-5" [outerStrokeWidth] = "5" [innerStrokeColor] = "'#ffffff'" [innerStrokeWidth] = "5" [imageHeight] = "50" [imageWidth] = "50" [showImage] = "true" [showBackground] = "false" [percent]="idioma.nivel.hablado" [outerStrokeColor]="idioma.color"></circle-progress>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-6 col-lg-3 text-center">
+              <div class="radial-prog-area margin-b-30">
+                <circle-progress [imageSrc] = "'assets/images/icons/_ionicons_svg_ios-volume-high.svg'" [radius]="50" [space] = "-5" [outerStrokeWidth] = "5" [innerStrokeColor] = "'#ffffff'" [innerStrokeWidth] = "5" [imageHeight] = "50" [imageWidth] = "50" [showImage] = "true" [showBackground] = "false" [percent]="idioma.nivel.escuchado"  [outerStrokeColor]="idioma.color"></circle-progress>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-6 col-lg-3 text-center">
+              <div class="radial-prog-area margin-b-30">
+                <circle-progress [imageSrc] = "'assets/images/icons/_ionicons_svg_md-create.svg'" [radius]="50" [space] = "-5" [outerStrokeWidth] = "5" [innerStrokeColor] = "'#ffffff'" [innerStrokeWidth] = "5" [imageHeight] = "50" [imageWidth] = "50" [showImage] = "true" [showBackground] = "false" [percent]="idioma.nivel.escrito" [outerStrokeColor]="idioma.color"></circle-progress>
+              </div>
+            </div>
+        </div>
+      </div>        
     </div><!-- row -->
   </div><!-- container -->
 </section><!-- about-section -->

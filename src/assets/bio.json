@@ -44,10 +44,10 @@
 		},
 		"experiencia" : [
 			{
-				"puesto" : "Desarrollador Web",
-				"empresa" : "Grupo Avalanz (Azteca Noreste, Periódico El Horizonte, Info7, etc.)",
-				"tiempo" : "2018",
-				"descripcion" : "Practicante de desarrollo web. Mayo 8 a Noviembre 8 de 2018. PHP, MySQL, JQuery, JavaScript, CSS, Laravel, Bootstrap."
+				"puesto" : "Desarrollador Java Jr.",
+				"empresa" : "AlphaCredit",
+				"tiempo" : "ACTUALIDAD",
+				"descripcion" : "Desarrollador en Java de Septiembre 17 de 2019 a la actualidad."
 			},
 			{
 				"puesto" : "Desarrollador FullStack PHP",
@@ -56,26 +56,20 @@
 				"descripcion" : "Desarrollador FullStack PHP de Febrero a Julio 2019. PHP, CodeIgniter, MySQL, JQuery, JavaScript, WordPress."
 			},
 			{
-				"puesto" : "Desarrollador Java Jr.",
-				"empresa" : "AlphaCredit",
-				"tiempo" : "ACTUALIDAD",
-				"descripcion" : "Desarrollador en Java de Septiembre 17 de 2019 a la actualidad."
+				"puesto" : "Desarrollador Web",
+				"empresa" : "Grupo Avalanz (Azteca Noreste, Periódico El Horizonte, Info7, etc.)",
+				"tiempo" : "2018",
+				"descripcion" : "Practicante de desarrollo web. Mayo 8 a Noviembre 8 de 2018. PHP, MySQL, JQuery, JavaScript, CSS, Laravel, Bootstrap."
 			}
+			
 		],
 		"educacion" : [
 			{
-				"nivel" : "Técnico en Mantenimiento",
-				"escuela" : "CETEC",
-				"lugar" : "Jiutepec, Morelos.",
-				"tiempo" : "2009",
-				"descripcion" : "Diplomado en mantenimiento preventivo de computadoras."
-			},
-			{
-				"nivel" : "Técnico Diseñador Gráfico",
-				"escuela" : "ICO",
-				"lugar" : "Cuernavaca, Morelos.",
-				"tiempo" : "2012",
-				"descripcion" : "Carrera Técnica en Diseño Gráfico Digital y Operador de Microcomputadoras (Office)."
+				"nivel" : "Lic. Ciencias Computacionales",
+				"escuela" : "FCFM UANL",
+				"lugar" : "San Nicolás de los Garza, Nuevo León.",
+				"tiempo" : "ACTUALIDAD",
+				"descripcion" : "Licenciatura en Ciencias Computacionales con especialidad en Ing. Desarrollo de Software."
 			},
 			{
 				"nivel" : "Técnico Programador",
@@ -85,12 +79,20 @@
 				"descripcion" : "Carrera Técnica en Programación. Nivel Medio Superior."
 			},
 			{
-				"nivel" : "Lic. Ciencias Computacionales",
-				"escuela" : "FCFM UANL",
-				"lugar" : "San Nicolás de los Garza, Nuevo León.",
-				"tiempo" : "ACTUALIDAD",
-				"descripcion" : "Licenciatura en Ciencias Computacionales con especialidad en Ing. Desarrollo de Software."
+				"nivel" : "Técnico Diseñador Gráfico",
+				"escuela" : "ICO",
+				"lugar" : "Cuernavaca, Morelos.",
+				"tiempo" : "2012",
+				"descripcion" : "Carrera Técnica en Diseño Gráfico Digital y Operador de Microcomputadoras (Office)."
+			},
+			{
+				"nivel" : "Técnico en Mantenimiento",
+				"escuela" : "CETEC",
+				"lugar" : "Jiutepec, Morelos.",
+				"tiempo" : "2009",
+				"descripcion" : "Diplomado en mantenimiento preventivo de computadoras."
 			}
+			
 		],
 		"conocimientos_generales" : [
 			{
@@ -112,16 +114,26 @@
 				"imagen" : "codeigniter.png"
 			}
 		],
-		"conocimientos" : "PHP, JAVA, JavaScript, MySQL, Oracle, SQL Server, C/C++, CSS, Perl, Python. <br/>Laravel, Bootstrap, JSF, CodeIgniter, WordPress, HTML, JQuery, UML, Git, Composer, Vue Js, Angujar Js.<br/>MVC, Android (Native). <br/>Adobe CC",
-		"idiomas" : {
-			"idioma_1" : {
+		"conocimientos" : "<ul><li>PHP, JAVA, JavaScript, MySQL, Oracle, SQL Server, C/C++, CSS, Perl, Python.</li> <br/><li>Laravel, Bootstrap, JSF, CodeIgniter, WordPress, HTML, JQuery, UML, Git, Composer, Vue Js, Angujar Js.</li><br/><li>MVC, Android (Native). </li><br/><li>Adobe CC</li></ul>",
+		"idiomas" : [
+			{
 				"nombre" : "Inglés",
 				"nivel" : {
 					"hablado" : "60",
 					"escuchado" : "60",
 					"escrito" : "60"
-				}
+				},
+				"color" : "#217c9e"
+			},
+			{
+				"nombre" : "Alemán",
+				"nivel" : {
+					"hablado" : "15",
+					"escuchado" : "15",
+					"escrito" : "15"
+				},
+				"color" : "#eba605"
 			}
-		}
+		]
 	}
 }
