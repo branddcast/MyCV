@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import  { CurriculumService } from './curriculum.service';
 import { OwlOptions } from 'ngx-owl-carousel-o';
 
@@ -11,6 +11,7 @@ export class AppComponent {
   title = 'MyCV';
 
   private curriculum = null;
+  @Output() multiplo10 = new EventEmitter();
 
   customOptions: OwlOptions = {
     loop: true,
@@ -39,10 +40,20 @@ export class AppComponent {
     }
   }
 
+  borders: string[] = [
+    'borde-azul',
+    'borde-amarillo',
+    'borde-verde',
+    'borde-rojo'
+  ];
+
+  border : string;
+
   constructor(private curriculumService: CurriculumService) {}
 
   ngOnInit() {
     this.curriculumService.curriculum()
-      .subscribe( result =>  this.curriculum = result)
+      .subscribe( result =>  this.curriculum = result);
+    //this.border = this.borders[Math.trunc(Math.random() * this.borders.length) + 1];
   }
 }
