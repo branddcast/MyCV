@@ -27,6 +27,8 @@
   
   <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
 
+  <link type="text/css" rel="stylesheet" href="assets/css/lightGallery.css" /> 
+
   <!-- SCIPTS -->
 
   <script src="assets/js/common-js/jquery-3.2.1.min.js"></script>
@@ -47,9 +49,27 @@
   
   <script src="assets/js/owl.carousel.min.js"></script>
 
+  <script src="assets/js/lightgallery.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script>
+
+  
+
+  <!-- lightgallery plugins -->
+  <script src="assets/js/lg-thumbnail.min.js"></script>
+  <script src="assets/js/lg-fullscreen.min.js"></script>
+
 </head>
 <body>
   <app-root></app-root>
 
 </body>
+
+<script type="text/javascript">
+  $(document).ready(function() {
+      $("#lightgallery").lightGallery({
+        selector: '.item'
+      }); 
+  });
+</script>
 </html>

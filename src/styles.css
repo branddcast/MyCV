@@ -13,3 +13,16 @@
     padding: 0 20px;
     margin: 0 !important;
 }
+
+.borde-azul{
+    border: 1px dashed rgb(8, 137, 197);
+}
+.borde-amarillo{
+    border: 1px dashed rgb(185, 197, 8);
+}
+.borde-verde{
+    border: 1px dashed rgb(8, 197, 8);
+}
+.borde-rojo{
+    border: 1px dashed rgb(197, 8, 8);
+}

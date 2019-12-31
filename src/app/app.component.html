@@ -42,7 +42,7 @@
       <div class="col-md-1 col-lg-2"></div>
       <div class="col-md-10 col-lg-8">
         <div class="intro">
-          <div class="profile-img"><img src="assets/images/{{curriculum.header.datos_personales.foto_perfil}}" alt=""></div>
+          <div class="profile-img"><img class="{{ border }}" src="assets/images/{{curriculum.header.datos_personales.foto_perfil}}" alt=""></div>
           <h2><b>{{curriculum.header.datos_personales.alias}}</b></h2>
           <h4 class="font-yellow" [innerHTML]="curriculum.header.datos_personales.ocupacion"></h4>
           <ul class="information margin-tb-30">
@@ -77,65 +77,16 @@
           <a href="#" data-filter="*" class="current"><b>TODOS</b></a>
           <a href="#" data-filter=".web-design"><b>DISEÑO WEB</b></a>
           <a href="#" data-filter=".branding"><b>SOFTWARE</b></a>
-          <a href="#" data-filter=".graphic-design"><b>DISEÑO GRÁFICO</b></a>
+          <!--<a href="#" data-filter=".graphic-design"><b>DISEÑO GRÁFICO</b></a>-->
         </div><!-- portfolioFilter -->
       </div><!-- col-sm-8 -->
     </div><!-- row -->
   </div><!-- container -->
   
-  <div class="portfolioContainer">
-    
-    <div class="p-item {{ this.borders[Math.trunc(Math.random() * this.borders.length) + 1]; }} web-design">
-      <a href="images/proyectos/fyn_portafolio.jpg" data-fluidbox>
-        <img src="assets/images/proyectos/fyn_portafolio.jpg" alt=""></a>
-    </div><!-- p-item -->
-    
-    <div class="p-item {{ this.borders[Math.trunc(Math.random() * this.borders.length) + 1]; }} branding graphic-design">
-      <!--<a href="images/portfolio-7-600x800.jpg" data-fluidbox>
-        <img src="assets/images/portfolio-7-600x800.jpg" alt=""></a>-->
-        <a href="images/thumbnails/thumb_fyn_16-9_servicios.jpg" data-fluidbox>
-          <img src="assets/images/thumbnails/thumb_fyn_16-9_servicios.jpg" alt=""></a>
-    </div><!-- p-item -->
-    
-    <div class="p-item {{ this.borders[Math.trunc(Math.random() * this.borders.length) + 1]; }} web-design">
-      <a href="images/portfolio-2-600x400.jpg" data-fluidbox>
-        <img src="assets/images/portfolio-2-600x400.jpg" alt=""></a>
-    </div><!-- p-item -->
-    
-    <div class="p-item {{ this.borders[Math.trunc(Math.random() * this.borders.length) + 1]; }} p-item-2 graphic-design">
-      <a class="img" href="images/portfolio-8-300x400.jpg" data-fluidbox>
-        <img src="assets/images/portfolio-8-300x400.jpg" alt=""></a>
-      <a class="img" href="images/portfolio-9-300x400.jpg" data-fluidbox>
-        <img src="assets/images/portfolio-9-300x400.jpg" alt=""></a>
-    </div><!-- p-item -->
-    
-    <div class="p-item {{ this.borders[Math.trunc(Math.random() * this.borders.length) + 1]; }} branding graphic-design">
-      <a href="images/portfolio-3-600x400.jpg" data-fluidbox>
-        <img src="assets/images/portfolio-3-600x400.jpg" alt=""></a>
-    </div><!-- p-item -->
-    
-    <div class="p-item {{ this.borders[Math.trunc(Math.random() * this.borders.length) + 1]; }} graphic-design web-design">
-      <a href="images/portfolio-4-600x400.jpg" data-fluidbox>
-        <img src="assets/images/portfolio-4-600x400.jpg" alt=""></a>
-    </div><!-- p-item -->
-    
-    <div class="p-item {{ this.borders[Math.trunc(Math.random() * this.borders.length) + 1]; }}  graphic-design branding">
-      <a href="images/portfolio-5-600x800.jpg" data-fluidbox>
-        <img src="assets/images/portfolio-5-600x800.jpg" alt=""></a>
-    </div><!-- p-item -->
-      
-    <div class="p-item {{ this.borders[Math.trunc(Math.random() * this.borders.length) + 1]; }} web-design branding">
-      <a href="images/portfolio-6-600x800.jpg" data-fluidbox>
-        <img src="assets/images/portfolio-6-600x800.jpg" alt=""></a>
-    </div><!-- p-item -->
+  <div class="portfolioContainer" id="lightgallery">
+      <div *ngFor="let portafolio of curriculum.body.portafolio" class="{{ portafolio.item }} {{ portafolio.tags }}" [innerHTML]="portafolio.proyecto">
 
-    <div class="p-item {{ this.borders[Math.trunc(Math.random() * this.borders.length) + 1]; }} p-item-2 graphic-design">
-      <a class="img" href="images/portfolio-10-300x400.jpg" data-fluidbox>
-        <img src="assets/images/portfolio-10-300x400.jpg" alt=""></a>
-      <a class="img" href="images/portfolio-11-300x400.jpg" data-fluidbox>
-        <img src="assets/images/portfolio-11-300x400.jpg" alt=""></a>
-    </div><!-- p-item -->
-  
+      </div>
   </div><!-- portfolioContainer -->
   
 </section><!-- portfolio-section -->
@@ -249,7 +200,7 @@
         <owl-carousel-o [options]="customOptions">
             <ng-container *ngFor="let slide of curriculum.body.conocimientos_generales">
               <ng-template carouselSlide style="width: 50% !important">
-                <img src="assets/images/{{slide.imagen}}" [alt]="slide.imagen">
+                <img class="{{ border }}" src="assets/images/{{slide.imagen}}" [alt]="slide.imagen">
               </ng-template>
             </ng-container>
           </owl-carousel-o>

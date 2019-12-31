@@ -20,7 +20,58 @@
 		}
 	},
 	"body" : {
-		"portafolio" : "",
+		"portafolio" : [
+			{
+				"item" : "p-item",
+				"tags" : "web-design",
+				"proyecto" : "<a class='item' href=\"assets/images/proyectos/fyn_portafolio.jpg\" data-fluidbox> <img class=\"borde-azul\" src=\"assets/images/proyectos/fyn_portafolio.jpg\" /></a>"
+			},
+			{
+				"item" : "p-item",
+				"tags" : "web-design",
+				"proyecto" : "<a href=\"assets/images/thumbnails/thumb_fyn_16-9_servicios.jpg\" data-fluidbox> <img class=\"borde-amarillo\" src=\"assets/images/thumbnails/thumb_fyn_16-9_servicios.jpg\" alt=\"\"></a> "
+			},
+			{
+				"item" : "p-item",
+				"tags" : "web-design",
+				"proyecto" : " <a href=\"images/proyectos/fyn_contacto.jpg\" data-fluidbox> <img class=\"borde-azul\" src=\"assets/images/proyectos/fyn_contacto.jpg\" alt=\"\"></a> "
+			},
+			{
+				"item" : "p-item p-item-2",
+				"tags" : "web-design",
+				"proyecto" : "<a class=\"img\" href=\"images/inbi.png\" data-fluidbox><img class=\"borde-amarillo\" src=\"assets/images/thumbnails/thumb_inbi.png\" alt=\"\"></a><a class=\"img\" href=\"images/inbi.png\" data-fluidbox><img class=\"borde-amarillo\" src=\"assets/images/thumbnails/thumb_inbi_2.png\" alt=\"\"></a>"
+			},
+			{
+				"item" : "p-item",
+				"tags" : "web-design",
+				"proyecto" : "<a href=\"images/proyectos/fyn_acerca.png\" data-fluidbox><img class=\"borde-amarillo\" src=\"assets/images/thumbnails/thumb_fyn_acerca.png\" alt=\"\"></a>"
+			},
+			{
+				"item" : "p-item",
+				"tags" : "branding",
+				"proyecto" : "<a href=\"images/proyectos/modulo_inventario.png\" data-fluidbox><img class=\"borde-verde\" src=\"assets/images/proyectos/modulo_inventario.png\" alt=\"\"></a>"
+			},
+			{
+				"item" : "p-item",
+				"tags" : "web-design",
+				"proyecto" : "<a href=\"images/proyectos/dr_fabiola.png\" data-fluidbox><img class=\"borde-rojo\" src=\"assets/images/thumbnails/thumb_dr_fabiola.png\" alt=\"\"></a>"
+			},
+			{
+				"item" : "p-item",
+				"tags" : "branding",
+				"proyecto" : "<a href=\"images/proyectos/clinica.png\" data-fluidbox><img class=\"borde-rojo\" src=\"assets/images/proyectos/clinica.png\" alt=\"\"></a>"
+			},
+			{
+				"item" : "p-item",
+				"tags" : "branding",
+				"proyecto" : "<a class=\"img\" href=\"images/proyectos/clinica_dashboard.png\" data-fluidbox><img class=\"borde-amarillo\" src=\"assets/images/proyectos/clinica_dashboard.png\" alt=\"\"></a>"
+			},
+			{
+				"item" : "p-item",
+				"tags" : "branding",
+				"proyecto" : "<a class=\"img\" href=\"images/proyectos/clinica_citas.png\" data-fluidbox><img class=\"borde-amarillo\" src=\"assets/images/proyectos/clinica_citas.png\" alt=\"\"></a>"
+			}
+		],
 		"acerca" : {
 			"descripcion" : "Estudiante nivel superior de la licenciatura en Ciencias Computacionales, de la Facultad de Ciencias Físico Matemáticas (FCFM) en la Universidad Autónoma de Nuevo León (UANL). Adaptación a entornos de trabajo. Organización. Liderazgo. Trabajo en equipo. Fácil Comprensión. Creativo.",
 			"habilidades" : [

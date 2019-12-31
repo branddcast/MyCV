@@ -40,12 +40,12 @@ export class AppComponent {
     }
   }
 
-  borders: string[] = [
+  /* borders: string[] = [
     'borde-azul',
     'borde-amarillo',
     'borde-verde',
     'borde-rojo'
-  ];
+  ]; */
 
   border : string;
 
